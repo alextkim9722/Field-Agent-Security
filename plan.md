@@ -26,9 +26,9 @@ _TODO_ Add time estimates to each of the top-level tasks
 * [ ] Download the starter project for this assessment and add the files to your repo
   * **See your instruction team for the correct files to use!**
 
-* [ ] Review the requirements (#.# hours)
+* [ ] Review the requirements (2.0 hours)
 
-* [ ] Identify any research that I need to do (#.# hours)
+* [ ] Identify any research that I need to do (2.0 hours)
 
 ---
 
@@ -38,15 +38,15 @@ _Note: The following sequence of tasks is focused on keeping refactoring to a mi
 
 _Use the SQL script included in the starter code to create your database and the initial data_
 
-* [ ] Create the AuthController with an endpoint for authenticating users (#.# hours)
+* [ ] Create the AuthController with an endpoint for authenticating users (4.0 hours)
 
-* [ ] Update the security configuration ant matchers to allow anonymous requests to the AuthController endpoint for authenticating users (#.# hours)
+* [ ] Update the security configuration ant matchers to allow anonymous requests to the AuthController endpoint for authenticating users (3.0 hours)
 
 **Make sure that my GitHub repo is updated (i.e. push all commits to my local feature branch to the remote repo)!**
 
 ### Part 2: Client-Side Routes
 
-* [ ] Implement the required client-side routes (#.# hours)
+* [ ] Implement the required client-side routes (3.0 hours)
   * [ ] Install `react-router-dom`
   * [ ] Define the necessary client-side routes (see the list of routes below)
   * [ ] Stub out any components that are needed to support the client-side routes
@@ -57,33 +57,33 @@ _Use the SQL script included in the starter code to create your database and the
 
 ### Part 3: User Login
 
-* [ ] Create a "Login" component (#.# hours)
+* [ ] Create a "Login" component (2.0 hours)
   * [ ] Add a form with "Username" and "Password" fields
   * [ ] Use `fetch` to `POST` the user's information to the User API
   * [ ] Use an existing user's information to test that the API returns an auth token
 
-* [ ] Add the necessary user state and helper functions to the App component (#.# hours)
+* [ ] Add the necessary user state and helper functions to the App component (3.0 hours)
   * [ ] Add a state variable to track the current user
   * [ ] Add a function to login a user
   * [ ] Add a function to logout a user
   * [ ] Collect the user state variable along with the login/logout helper functions into a single `auth` object
 
-* [ ] Create a React context to track user auth (#.# hours)
+* [ ] Create a React context to track user auth (3.0 hours)
   * [ ] Create the context in its own module
   * [ ] Update the App component to provide the context to the entire app
   * [ ] Set the context's `value` to the `auth` object
 
-* [ ] Update the "Login" component (#.# hours)
+* [ ] Update the "Login" component (3.0 hours)
   * [ ] Consume the user auth context
   * [ ] After a successful `POST` to the User API, call the auth context's login function and pass in the auth token and redirect the user to the "Home" route
 
-* [ ] Update the header/navbar component (#.# hours)
+* [ ] Update the header/navbar component (4.0 hours)
   * [ ] Consume the user auth context
   * [ ] When there's a logged in user, display the user's username and "Logout" button
   * [ ] When there's not a logged in user, display links for the "Login" and "Register" routes
   * [ ] When the "Logout" button is clicked, call the auth context's logout function
 
-* [ ] Protect each of the agent related routes (#.# hours)
+* [ ] Protect each of the agent related routes (3.0 hours)
   * [ ] When there's a logged in user, display the route's associated component
   * [ ] When there's not a logged in user, redirect the user to the login route
 
@@ -91,33 +91,37 @@ _Use the SQL script included in the starter code to create your database and the
 
 ### Part 4: Agents CRUD UI Component Refactoring
 
-* [ ] Update the "Agents" component (#.# hours)
+* [ ] Update the "Agents" component (3.0 hours)
   * [ ] Update the "Add Agent" button to redirect the user to the "Add Agent" route (if not already completed)
   * [ ] Update the individual agent "Edit" and "Delete" buttons to redirect the user to the appropriate routes (if not already implemented)
+  - Status Codes: 200 and 404
 
-* [ ] Update the "Add Agent" component (#.# hours)
+* [ ] Update the "Add Agent" component (2.0 hours)
   * [ ] Move code from the "Agents" component into the "Add Agent" component
   * [ ] After a successful `POST` to the Field Agent API, redirect the user to the "Agents" route
+  - Status Codes: 201, 400, and 403
 
-* [ ] Update the "Edit Agent" component (#.# hours)
+* [ ] Update the "Edit Agent" component (2.0 hours)
   * [ ] Move code from the "Agents" component into the "Edit Agent" component
   * [ ] Use the `useParams` hook to get the agent's ID from the route
   * [ ] Use `fetch` to `GET` the agent from the Field Agent API when the component is first loaded
   * [ ] After a successful `PUT` to the Field Agent API, redirect the user to the "Agents" route
+  - Status Codes: 200, 204, 400, 403, and 404
 
-* [ ] Update the "Delete Agent" component (if needed) (#.# hours)
+* [ ] Update the "Delete Agent" component (if needed) (2.0 hours)
   * [ ] Move code from the "Agents" component into the "Delete Agent" component
   * [ ] Use the `useParams` hook to get the agent's ID from the route
   * [ ] Use `fetch` to `GET` the agent from the Field Agent API when the component is first loaded
   * [ ] After a successful `DELETE` from the Field Agent API, redirect the user to the "Agents" route
+  - Status Codes: 200, 204, 403, and 404
 
 **Make sure that my GitHub repo is updated (i.e. push all commits to my local feature branch to the remote repo)!**
 
 ### Part 5: Testing and Project Submission
 
-* [ ] Use the provided test plan to manually test the application (#.# hours)
+* [ ] Use the provided test plan to manually test the application (3.0 hours)
 
-* [ ] Create a pull request in GitHub to facilitate code review (#.# hours)
+* [ ] Create a pull request in GitHub to facilitate code review (0.5 hours)
 
 ---
 
